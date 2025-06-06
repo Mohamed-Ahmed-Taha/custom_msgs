@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>pseudo_grid_map</name>
+  <name>pseudo_grid_map_msgs</name>
   <version>0.0.0</version>
   <description>The custom_msgs ROS1 package</description>
 
