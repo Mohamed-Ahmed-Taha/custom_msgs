@@ -16,12 +16,13 @@ find_package(geometry_msgs REQUIRED)
 
 install(
   FILES ros1_bridge_mapping_rules.yaml
-  DESTINATION share/${PROJECT_NAME})
+  DESTINATION share/${PROJECT_NAME}
+)
   
-  rosidl_generate_interfaces(${PROJECT_NAME}
-    "msg/UAVPose.msg"
-    DEPENDENCIES std_msgs geometry_msgs
-  )
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/UAVPose.msg"
+  DEPENDENCIES std_msgs geometry_msgs
+)
 
 ament_package()
 
